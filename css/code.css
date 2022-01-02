@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Barlow-LightItalic';
+  src: url('../fonts/Barlow-LightItalic.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow-LightItalic';
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  overflow: hidden;
+  background: rgb(99, 255, 151);
+  background: linear-gradient(
+    117deg,
+    rgba(99, 255, 151, 1) 19%,
+    rgba(46, 255, 126, 1) 42%,
+    rgba(8, 255, 160, 1) 63%,
+    rgba(0, 255, 157, 1) 74%
+  );
+}
+.form-content {
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-content .code-form {
+  width: 80%;
+  padding: 50px 0px;
+}
+.form-content .title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #333;
+}
+.form-content .title-under {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+.form-content .input-boxes {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  border: 1px solid rgba(0, 0, 0, 0.401);
+  outline: none !important;
+  padding: 5px 3px;
+  border-radius: 50%;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+}
+input:focus {
+  border-color: #00fa9a;
+}
+
+.form-content .button {
+  color: #fff;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.form-content .button button {
+  padding: 10px 30px;
+  background-color: #00fa9a;
+  border: none;
+  border-radius: 20px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 495px) {
+  .code-form {
+    width: 100% !important;
+  }
+  .form-content {
+    max-width: 500px;
+    width: 100%;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 402px) {
+  .code-form {
+    width: 100% !important;
+  }
+  input {
+    padding: 3px 1px;
+  }
+}
+@media (max-width: 331px) {
+  .form-content {
+    max-width: 600px;
+  }
+  .title {
+    font-size: 33px !important;
+  }
+}
